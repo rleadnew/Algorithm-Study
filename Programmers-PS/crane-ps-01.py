@@ -9,7 +9,7 @@ def solution(board, moves):
                 board[i][move - 1] = 0 # 뽑힌 인형 자리를 비웠다고 표시
 
                 if len(finalList) > 1:
-                    if finalList[-1] == finalList[-2]:
+                    if finalList[-1] == finalList[-2]: # 리스트의 마지막 원소와 그 전 원소가 같을 때, 두 원소를 삭제(인덱스 활용 숙지!)
                         finalList.pop(-1)
                         finalList.pop(-1)
                         answer += 2
