@@ -5,7 +5,7 @@ def fibo(k):
         return 1
     if d[k] != 0: # 이미 계산한 적 있는 문제라면 그대로 반환
         return d[k]
-    d[k] = fibo(k - 1) + fibo(k - 2) # 아직 계싼하지 않은 문제라면 점화식에 따라서 피보나치 결과 반환
+    d[k] = fibo(k - 1) + fibo(k - 2) # 아직 계산하지 않은 문제라면 점화식에 따라서 피보나치 결과 반환
     return d[k]
 
 print(fibo(88))
