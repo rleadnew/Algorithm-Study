@@ -47,7 +47,7 @@ def dijkstra(start):
             if cost < distance[j[0]]:
                 distance[j[0]] = cost
 
-# 다익스트라 알고리즘 수행
+# 다익스트라 알고리즘 수행 
 dijkstra(start)
 
 # 모든 노드로 가기 위한 최단 거리를 출력
